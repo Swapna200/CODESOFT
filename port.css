@@ -1,0 +1,224 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #192a56; /* Deep blue background */
+    color: #fff; /* White text color */
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: goldenrod; /* Dark blue navbar */
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #e84118; /* Red color on hover */
+    background-color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: #2ecc71; /* Green highlight color */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #3498db; /* Bluish shadow */
+}
+.highlight:hover{
+    text-shadow: 1px 1px 3px #cc2093; 
+}
+
+.about-section {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-content img {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(0 0 0 / 136%);
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.1); /* Scale image on hover */
+    box-shadow:greenyellow ;
+}
+
+.bio {
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    margin: 10px;
+}
+
+.skills-list li span.skill {
+    background-color: #d82fa6;
+    padding: 10px 20px;
+    border: 2px solid #1a72ac; /* Border color */
+    border-radius: 25%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-list li span.skill:hover {
+    background-color: #db346c; /* Blue background on hover */
+    box-shadow: 10px 5px 5px gold;
+    color: #fff;
+}
+
+.projects-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pro{
+    text-align: center;
+}
+.project {
+    width: 300px;
+    background-color: #34495e; /* Dark gray background */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Light black shadow */
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    /* Lift card on hover */
+    transform: translateY(-10px)scale(1.1) ;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.project-info {
+    text-align: center;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.resume-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2c3e50; /* Dark blue background */
+    color: #fff;
+}
+
+.resume-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resume-content h2 {
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db34ca; /* Blue background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #5d1737; /* Darker blue on hover */
+}
+
+.contact-info {
+    max-width: 50%;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #bdc3c7; /* Light gray background */
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #333; /* Dark gray text color */
+}
